@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DuoOdonto | Deolindo Neto & Maria Luísa</title>
+<meta name="description" content="Conheça a DuoOdonto, projeto de Deolindo Neto e Maria Luísa, acadêmicos de Odontologia em Teresina — PI.">
+<meta property="og:title" content="DuoOdonto | Deolindo Neto & Maria Luísa"><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#183B45;--g:#B8E8D4;--b:#B9DDF5;--g2:#27C79A;--b2:#2F9BEA;--bg:#fff;--card:rgba(255,255,255,.7);--line:rgba(24,59,69,.12);--mut:rgba(24,59,69,.68);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#E6F3F1;--bg:#0E2228;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);--mut:rgba(230,243,241,.7)}}
+:root[data-theme="dark"]{--ink:#E6F3F1;--bg:#0E2228;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);--mut:rgba(230,243,241,.7)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;font-weight:300;letter-spacing:-.02em;line-height:1.05}
+section{padding:clamp(72px,12vw,140px) 6vw;position:relative;max-width:1200px;margin:auto}
+.tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-bottom:18px;display:block}
+h2{font-size:clamp(34px,6vw,72px);margin-bottom:24px}p.l{color:var(--mut);max-width:620px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 28px;border-radius:99px;font-weight:600;font-size:16px;text-decoration:none;color:var(--ink);background:linear-gradient(120deg,var(--g),var(--b));transition:transform .25s,box-shadow .25s;box-shadow:0 10px 30px -12px rgba(24,59,69,.35)}
+.btn:hover{transform:translateY(-3px)}.btn.o{background:transparent;border:1px solid var(--line);box-shadow:none}
+.rv{opacity:0;transform:translateY(28px);transition:1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+/* hero */
+#hero{min-height:100svh;padding:70px 0 60px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;max-width:none;overflow:hidden}
+.orb{position:absolute;width:min(46vw,420px);aspect-ratio:1;border-radius:50% 45% 55% 50%;filter:blur(22px);opacity:.95;top:50%;left:50%;animation:morph 14s ease-in-out infinite;will-change:transform}
+#o1{background:radial-gradient(circle at 35% 35%,#E8FFF5,var(--g) 35%,var(--g2));transform:translate(calc(-50% - var(--d,40%)),-60%)}
+#o2{background:radial-gradient(circle at 65% 35%,#EAF6FF,var(--b) 35%,var(--b2));transform:translate(calc(-50% + var(--d,40%)),-40%);animation-delay:-7s}
+@keyframes morph{50%{border-radius:40% 55% 45% 60%}}
+.smile{position:absolute;top:50%;left:50%;width:min(60vw,520px);transform:translate(-50%,-10%);opacity:var(--s,0);pointer-events:none}
+.hero-in{position:relative;z-index:2}
+.foto{position:relative;width:min(74vw,340px);margin:0 auto 26px;padding:6px;border-radius:36px;background:linear-gradient(135deg,var(--g2),var(--b2));box-shadow:0 30px 70px -20px rgba(47,155,234,.55);animation:fl 7s ease-in-out infinite}.foto img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:30px}.foto span{position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);white-space:nowrap;background:#fff;color:#183B45;font-size:13px;font-weight:600;padding:8px 18px;border-radius:99px;box-shadow:0 8px 24px -8px rgba(24,59,69,.4)}@keyframes fl{50%{transform:translateY(-10px)}}.me{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border:1px solid var(--line);background:var(--card);backdrop-filter:blur(10px);border-radius:99px;font-size:13px;margin-bottom:28px}
+.me img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:60% 30%}
+.big{font-size:clamp(54px,15vw,190px);letter-spacing:-.045em;font-weight:500;color:var(--ink)}.big .g{background:linear-gradient(100deg,#0FAE84,#2F9BEA,#0FAE84);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite;filter:drop-shadow(0 6px 24px rgba(47,155,234,.45))}@keyframes shine{to{background-position:200% 0}}
+.sub{font-size:clamp(15px,2vw,19px);letter-spacing:.14em;text-transform:uppercase;margin:6px 0 30px}
+h1+.sub+h2{font-size:clamp(22px,3.4vw,38px);margin-bottom:14px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+/* duo */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.pane{border:1px solid var(--line);background:var(--card);border-radius:28px;padding:32px;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .5s;position:relative;overflow:hidden}
+.pane::before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;top:-60px;right:-60px;filter:blur(30px);opacity:.7;background:var(--g);transition:transform .8s}
+.pane.b::before{background:var(--b);right:auto;left:-60px}
+.pane:hover{transform:translateY(-8px)}.pane:hover::before{transform:translate(-30px,30px)}
+.pane h3{font-size:30px;position:relative}.pane span{color:var(--mut);position:relative}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+/* timeline */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px}
+.st{border-top:1px solid var(--line);padding-top:18px}.st b{font:300 40px Fraunces,serif;display:block}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.ac{border:1px solid var(--line);border-radius:28px;padding:clamp(24px,4vw,48px);background:linear-gradient(135deg,rgba(184,232,212,.35),rgba(185,221,245,.35))}
+.ac p{font-size:clamp(18px,2.4vw,24px);max-width:800px}
+/* procedures */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}}
+.pc{border:1px solid var(--line);border-radius:24px;padding:22px;min-height:190px;position:relative;overflow:hidden;background:var(--card);transition:transform .4s;display:flex;flex-direction:column;justify-content:space-between}
+.pc:hover,.pc:focus{transform:translateY(-6px)}
+.ic{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--g2),var(--b2));display:flex;align-items:center;justify-content:center;transition:.5s;box-shadow:0 10px 24px -8px rgba(47,155,234,.6)}.ic svg{width:32px;height:32px}.pc:hover .ic,.pc:focus .ic{border-radius:18px;transform:rotate(-8deg) scale(1.12)}
+.pc small{color:var(--mut);display:block;font-size:13px;line-height:1.4;margin-top:4px}
+.note{font-size:14px;color:var(--mut);margin-top:22px}
+/* how */
+.how{position:relative;padding-left:44px;margin-top:40px}
+.rail{position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.rail i{display:block;width:100%;height:var(--h,0%);background:linear-gradient(var(--g),var(--b))}
+.hs{position:relative;padding:0 0 38px}.hs::before{content:"";position:absolute;left:-41px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--b)}
+.hs h3{font-size:28px;margin-bottom:4px}.hs span{color:var(--mut)}
+/* registros */
+.ph{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+@media(max-width:900px){.ph{grid-template-columns:1fr 1fr}}
+.ph figure{border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/5;background:var(--card)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}.ph figure:hover img{transform:scale(1.06)}
+.ph figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.85);color:#183B45;font-size:12px;padding:6px 12px;border-radius:99px;backdrop-filter:blur(8px)}
+/* resumos */
+.res{border-radius:32px;padding:clamp(28px,5vw,64px);background:linear-gradient(135deg,var(--g),var(--b));color:#183B45;text-align:center}
+.res h2{margin-inline:auto}.res p{margin:0 auto 26px;max-width:560px}.res .btn{background:#fff}.res .cta{margin-top:0}
+.wa{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+@media(max-width:700px){.wa{grid-template-columns:1fr}}
+.wa div{border:1px solid var(--line);border-radius:28px;padding:30px;background:var(--card)}.wa h3{font-size:30px}.wa p{color:var(--mut);margin:4px 0 20px}
+/* insta */
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:30px;max-width:520px}
+.ig div{aspect-ratio:1;border-radius:12px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;font:300 clamp(12px,2.6vw,17px)/1.15 Fraunces,serif;color:#183B45}
+.ig div:nth-child(3n+1){background:var(--g)}.ig div:nth-child(3n+2){background:#fff;border:1px solid var(--line)}.ig div:nth-child(3n){background:var(--b)}
+footer{text-align:center;padding:60px 6vw 120px;color:var(--mut);font-size:13px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;padding:14px 22px;font-size:15px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style></head><body>
+<header id="hero" style="--d:40%">
+<div class="orb" id="o1"></div><div class="orb" id="o2"></div>
+<svg class="smile" id="sm" viewBox="0 0 400 120" fill="none"><path d="M20 30 Q200 150 380 30" stroke="#183B45" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/></svg>
+<div class="hero-in">
+<figure class="foto"><img src="images/duo.jpg" alt="Deolindo Neto e Maria Luísa, acadêmicos de Odontologia"><span>Deolindo Neto + Maria Luísa</span></figure>
+<h1 class="big serif"><span class="g">DUO</span>DONTO</h1>
+<p class="sub">Teresina — PI · @duodonto.pi</p>
+<h2 class="serif">Duas histórias. Uma jornada na Odontologia.</h2>
+<p class="l" style="margin:auto">Somos acadêmicos de Odontologia e criamos a DuoOdonto para compartilhar nossa formação, nossa rotina clínica e as possibilidades de atendimento dentro do ambiente universitário.</p>
+<div class="cta"><a class="btn" href="#duo">Quero conhecer</a><a class="btn o" href="#contato">Falar com a DuoOdonto</a></div>
+</div></header>
+
+<section id="duo"><span class="tag">01 — Duo</span><h2 class="serif rv">Duas pessoas.</h2>
+<p class="l rv">Duas personalidades diferentes, uma mesma paixão pela Odontologia.</p>
+<div class="two"><div class="pane rv"><h3>Deolindo Neto</h3><span>Acadêmico de Odontologia</span></div><div class="pane b rv"><h3>Maria Luísa</h3><span>Acadêmica de Odontologia</span></div></div></section>
+
+<section><span class="tag">02 — Odonto · A jornada</span><h2 class="serif rv">Antes de atender, existe uma história.</h2>
+<div class="steps rv"><div class="st"><b>01</b>Estudo</div><div class="st"><b>02</b>Prática</div><div class="st"><b>03</b>Supervisão</div><div class="st"><b>04</b>Aprendizado</div><div class="st"><b>05</b>Cuidado</div></div></section>
+
+<section><div class="ac rv"><span class="tag">Somos acadêmicos de Odontologia</span><p>A DuoOdonto nasceu dentro da nossa jornada acadêmica. Os atendimentos acontecem no ambiente universitário, conforme disponibilidade e critérios da instituição, dentro das atividades clínicas e sob supervisão profissional.</p></div></section>
+
+<section><span class="tag">03 — Prática</span><h2 class="serif rv">O que fazemos na prática</h2>
+<p class="l rv">Durante nossa formação clínica, temos contato com diferentes procedimentos odontológicos realizados dentro do ambiente acadêmico e sob supervisão.</p>
+<div class="grid">
+<div class="pc rv" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2C10.6 2 6 2 6 6.8c0 3 1 4.2 1.5 7 .4 2.6 1 6 2.5 6s1.2-3.6 2-3.6.6 3.6 2 3.6 2.1-3.4 2.5-6c.5-2.8 1.500-4 1.500-7C18 2 13.400 2 12 3.200z" transform="translate(2.4 5) scale(.8)"/><path d="M12 7V1m-3 3l3-3 3 3"/></svg></span><div><b>Exodontia</b><small>Presente na nossa formação clínica</small></div></div>
+<div class="pc rv" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20c0-6 3-9 8-10l3-4 3 2-3 4c-1 4-4 7-9 8z"/><path d="M17 4l2 1"/></svg></span><div><b>Raspagem</b><small>Presente na nossa formação clínica</small></div></div>
+<div class="pc rv" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2C10.6 2 6 2 6 6.8c0 3 1 4.2 1.5 7 .4 2.6 1 6 2.5 6s1.2-3.6 2-3.6.6 3.6 2 3.6 2.1-3.4 2.5-6c.5-2.8 1.500-4 1.500-7C18 2 13.400 2 12 3.200z" transform="translate(1.5 3) scale(.85)"/><path d="M19 3v4M17 5h4M4 3v3M2.5 4.5h3"/></svg></span><div><b>Limpeza</b><small>Presente na nossa formação clínica</small></div></div>
+<div class="pc rv" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c0-5 4-8 9-8s9 3 9 8"/><path d="M6 15v3M10 15v3M14 15v3M18 15v3"/><path d="M3 15h18"/></svg></span><div><b>Prótese</b><small>Presente na nossa formação clínica</small></div></div>
+<div class="pc rv" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2C10.6 2 6 2 6 6.8c0 3 1 4.2 1.5 7 .4 2.6 1 6 2.5 6s1.2-3.6 2-3.6.6 3.6 2 3.6 2.1-3.4 2.5-6c.5-2.8 1.500-4 1.500-7C18 2 13.400 2 12 3.200z"/><path d="M9.500 7l.5 8M14.500 7l-.5 8"/></svg></span><div><b>Canal</b><small>Presente na nossa formação clínica</small></div></div>
+<div class="pc rv" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2C10.6 2 6 2 6 6.8c0 3 1 4.2 1.5 7 .4 2.6 1 6 2.5 6s1.2-3.6 2-3.6.6 3.6 2 3.6 2.1-3.4 2.5-6c.5-2.8 1.500-4 1.500-7C18 2 13.400 2 12 3.200z"/><path d="M12 8v5M9.500 10.500h5"/></svg></span><div><b>Restauração</b><small>Presente na nossa formação clínica</small></div></div></div>
+<p class="note">A disponibilidade depende das atividades acadêmicas, avaliação do caso e critérios da instituição.</p></section>
+
+<section><span class="tag">04 — Cuidado</span><h2 class="serif rv">Cada paciente tem uma história.</h2>
+<p class="l rv">Registros da nossa prática acadêmica, sempre sob supervisão, sem expor pacientes.</p>
+<div class="ph"><figure class="rv"><img src="images/pratica-endo.jpg" alt="Campo operatório durante tratamento endodôntico" loading="lazy"><figcaption>Prática clínica</figcaption></figure>
+<figure class="rv"><img src="images/radiografia-46.jpg" alt="Radiografia periapical" loading="lazy"><figcaption>Estudo de caso</figcaption></figure>
+<figure class="rv"><img src="images/cuidado.jpg" alt="Atendimento acadêmico com paramentação completa" loading="lazy"><figcaption>Cuidado humano</figcaption></figure>
+<figure class="rv"><img src="images/bastidores.jpg" alt="Instrumentais cirúrgicos sobre a mesa" loading="lazy"><figcaption>Bastidores</figcaption></figure></div></section>
+
+<section id="como"><span class="tag">05 — Conexão</span><h2 class="serif rv">Como funciona</h2>
+<div class="how" id="how"><div class="rail"><i></i></div>
+<div class="hs rv"><h3>01 · Você chama.</h3><span>Entre em contato pelo WhatsApp.</span></div>
+<div class="hs rv"><h3>02 · A gente conversa.</h3><span>Entendemos o que você procura.</span></div>
+<div class="hs rv"><h3>03 · Verificamos.</h3><span>Analisamos se existe atividade acadêmica compatível e disponibilidade.</span></div>
+<div class="hs rv"><h3>04 · Você recebe orientação.</h3><span>Caso exista possibilidade, explicamos os próximos passos.</span></div>
+<div class="hs rv"><h3>05 · Atendimento supervisionado.</h3><span>O atendimento acontece dentro do ambiente universitário.</span></div></div></section>
+
+<section><div class="res rv"><span class="tag">Acesso exclusivo</span><h2 class="serif">Resumos de todas as matérias da Odontologia</h2>
+<p>Peça o link de acesso exclusivo e a gente envia direto pelo WhatsApp.</p>
+<div class="cta"><a class="btn" data-n="5586988872467" data-m="Olá, Deolindo! Quero receber o link de acesso exclusivo aos resumos de Odontologia.">Pedir ao Deolindo</a><a class="btn" data-n="5586981717743" data-m="Olá, Maria Luísa! Quero receber o link de acesso exclusivo aos resumos de Odontologia.">Pedir à Maria Luísa</a></div></div></section>
+
+<section id="contato"><span class="tag">06 — DuoOdonto</span><h2 class="serif rv">Vamos conversar?</h2>
+<div class="wa"><div class="rv"><h3>Deolindo Neto</h3><p>+55 86 98887-2467</p><a class="btn" data-n="5586988872467" data-m="Olá, Deolindo! Conheci a DuoOdonto pelo Instagram e gostaria de saber mais sobre os atendimentos disponíveis.">Falar com Deolindo</a></div>
+<div class="rv"><h3>Maria Luísa</h3><p>+55 86 98171-7743</p><a class="btn" data-n="5586981717743" data-m="Olá, Maria Luísa! Conheci a DuoOdonto pelo Instagram e gostaria de saber mais sobre os atendimentos disponíveis.">Falar com Maria Luísa</a></div></div></section>
+
+<section><span class="tag">Instagram</span><h2 class="serif rv">Acompanhe a nossa jornada.</h2>
+<div class="ig rv"><div>DUODONTO</div><div>Deolindo + Maria Luísa</div><div>Duas histórias. Uma jornada.</div><div>Como funciona?</div><div>O que fazemos na prática?</div><div>Exodontia • Raspagem • Limpeza</div><div>Um pouco da nossa rotina</div><div>Odontologia além da cadeira</div><div>Quer saber mais?</div></div>
+<div class="cta" style="justify-content:flex-start"><a class="btn" href="https://instagram.com/duodonto.pi" target="_blank" rel="noopener">Seguir @duodonto.pi</a></div></section>
+
+<footer>DuoOdonto · Deolindo Neto & Maria Luísa · Acadêmicos de Odontologia · Teresina — PI<br>Atendimentos no ambiente universitário, sob supervisão, conforme disponibilidade e critérios da instituição.</footer>
+<a class="btn fab" data-n="5586988872467" data-m="Olá! Conheci a DuoOdonto pelo Instagram e gostaria de saber mais sobre os atendimentos disponíveis.">Falar com a DuoOdonto</a>
+<script>
+document.querySelectorAll('[data-n]').forEach(a=>{a.href='https://wa.me/'+a.dataset.n+'?text='+encodeURIComponent(a.dataset.m);a.target='_blank';a.rel='noopener'});
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+const hero=document.getElementById('hero'),sm=document.getElementById('sm'),how=document.getElementById('how');
+function sc(){const p=Math.min(scrollY/(innerHeight*.7),1);hero.style.setProperty('--d',(40-p*34)+'%');sm.style.setProperty('--s',p>.7?(p-.7)/.3:0);
+const r=how.getBoundingClientRect();how.style.setProperty('--h',Math.max(0,Math.min(100,((innerHeight*.6-r.top)/r.height)*100))+'%')}
+addEventListener('scroll',sc,{passive:true});sc();
+</script></body></html>
